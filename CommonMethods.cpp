@@ -15,7 +15,7 @@ CommonMethods::CommonMethods()
 // ---------------------------------------------------------------------
 bool CommonMethods::GetRandomBool()
 {
-    srand(time(0));
+    srand(static_cast<unsigned int>(time(0)));
     return rand() % 2 == 0;
 }
 
